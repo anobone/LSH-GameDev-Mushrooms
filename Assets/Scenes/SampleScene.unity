@@ -247,7 +247,7 @@ GameObject:
   - component: {fileID: 162135761}
   m_Layer: 0
   m_Name: Enemy (1)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -265,7 +265,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: -7408084125103166785, guid: 901f6425661dd994997445b0e05cf1e8, type: 3}
-  waitTime: 5
+  time1: 0
+  time2: 0
 --- !u!212 &162135762
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -346,7 +347,7 @@ GameObject:
   - component: {fileID: 369480023}
   m_Layer: 0
   m_Name: Enemy (3)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -364,7 +365,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: -7408084125103166785, guid: 901f6425661dd994997445b0e05cf1e8, type: 3}
-  waitTime: 5
+  time1: 0
+  time2: 0
 --- !u!212 &369480024
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -672,7 +674,7 @@ GameObject:
   - component: {fileID: 537327819}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -757,7 +759,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: -7408084125103166785, guid: 901f6425661dd994997445b0e05cf1e8, type: 3}
-  waitTime: 5
+  time1: 0
+  time2: 0
 --- !u!50 &537327818
 Rigidbody2D:
   serializedVersion: 4
@@ -1346,7 +1349,7 @@ GameObject:
   - component: {fileID: 1218736454}
   m_Layer: 0
   m_Name: Enemy (2)
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1364,7 +1367,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: -7408084125103166785, guid: 901f6425661dd994997445b0e05cf1e8, type: 3}
-  waitTime: 5
+  time1: 0
+  time2: 0
 --- !u!212 &1218736455
 SpriteRenderer:
   m_ObjectHideFlags: 0
