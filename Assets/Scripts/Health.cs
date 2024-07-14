@@ -5,17 +5,21 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] float healthMax;
-    [SerializeField] float healthLeft;
-
-
-    public float RemainingHealth
+    float healthLeft;
+    private void Awake()
     {
-        get
-        {
-            return healthLeft;
-        }
+        healthLeft = healthMax;
     }
-    
+
+    public float GetHealthMax
+    {
+        get { return healthMax; }
+    }
+    public float GetRemainingHealth
+    {
+        get { return healthLeft; }
+    }
+
     public void HealthDown(float damage)
     {
         if (healthLeft == 0)

@@ -23,7 +23,6 @@ public class EnemyFire : MonoBehaviour
     {
         if (Time.time > nextTimeSpawn)
         {
-
             Bullet bulletClone;
             //GameObject bulletClone = bullet;
             bulletClone = Instantiate(bullet, transform.position, Quaternion.identity, transform);

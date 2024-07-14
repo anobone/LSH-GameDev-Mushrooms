@@ -16,8 +16,6 @@ public class PlayerController : MonoBehaviour
     public bool isPermitted = true;
     public bool disabledInput = false;
 
-    Health health;
-
     [SerializeField] private float moveSpeed;
     void Start()
     {
