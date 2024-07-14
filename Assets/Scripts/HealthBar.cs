@@ -16,6 +16,7 @@ public class HealthBar : MonoBehaviour
     {
         healthBar = gameObject.GetComponent<RectTransform>();
         healthLeft = characterHealth.GetHealthMax;
+        healthMax = healthLeft;
         healthBarSize = healthBar.sizeDelta.x;
     }
 
@@ -25,7 +26,8 @@ public class HealthBar : MonoBehaviour
         if (characterHealth.GetRemainingHealth > 0)
         {
             characterHealth.HealthDown(Time.deltaTime * speed);
-            healthBar.sizeDelta = new Vector2(healthLeft / healthMax * healthBarSize, healthBar.sizeDelta.y);
+            //Debug.Log(characterHealth.GetRemainingHealth);
+            healthBar.sizeDelta = new Vector2(characterHealth.GetRemainingHealth / healthMax * healthBarSize, healthBar.sizeDelta.y);
         }
     }
 

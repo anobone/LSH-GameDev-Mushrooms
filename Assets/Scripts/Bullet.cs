@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float force;
     [SerializeField] float damage;
     string subject = "Player";
+    [SerializeField] Sprite reversedBullet;
     //GameObject playerHealth;
     void Awake()
     {
@@ -24,6 +25,7 @@ public class Bullet : MonoBehaviour
     public void Reverse()
     {
         rb.velocity = -rb.velocity*10;
+        this.gameObject.GetComponent<SpriteRenderer>().sprite = reversedBullet;
     }
     /*private void OnCollisionEnter2D(Collision2D shielded)
     {
@@ -42,23 +44,24 @@ public class Bullet : MonoBehaviour
             }
         }
     }*/
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.Log("Detected Something");
-        Health healthComponent = collision.gameObject.GetComponent<Health>();
+        Debug.Log("Detected " + collider.gameObject.tag);
+        Health healthComponent = collider.gameObject.GetComponent<Health>();
 
-        if (healthComponent)
+        if (collider.gameObject.tag == "Shield")
+        {
+            Debug.Log("Reverse Bullet");
+            ChangeSubject();
+            Reverse();
+            return;
+        }
+        if (healthComponent && collider.gameObject.tag == subject)
         {
             Debug.Log("Hit " + subject);
             healthComponent.HealthDown(damage);
             //по хорошему это надо переписать
             Destroy(gameObject);
-        }
-        if (collision.gameObject.tag == "Shield")
-        {
-            Debug.Log("Reverse Bullet");
-            ChangeSubject();
-            Reverse();
         }
     }
 
