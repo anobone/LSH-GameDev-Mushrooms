@@ -8,12 +8,15 @@ public class PlayerController : MonoBehaviour
 {
     private new Rigidbody2D rigidbody2D;
     [SerializeField] private FixedJoystick joystick;
-    [SerializeField] private Animator animator;
+    //[SerializeField] private Animator animator;
+
     private BoxCollider2D hitBox;
     [SerializeField] private GameObject shieldObject;
+
     public bool isPermitted = true;
     public bool disabledInput = false;
 
+    Health health;
 
     [SerializeField] private float moveSpeed;
     void Start()
@@ -56,6 +59,7 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(2f);
         shieldObject.SetActive(false);
         isPermitted = true;
+        yield return new WaitForSeconds(1f);
     }
 
     public void DisableInput()

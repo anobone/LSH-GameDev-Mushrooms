@@ -9,7 +9,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] float force;
     [SerializeField] float damagePercent;
     string subject = "Player";
-    GameObject playerHealth;
+    //GameObject playerHealth;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
@@ -45,10 +45,12 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Detected Something");
+        Health healthComponent = collider.gameObject.GetComponent<Health>();
+
         if (collider.gameObject.tag == subject)
         {
             Debug.Log("Hit " + subject);
-            playerHealth.GetComponent<Health>().HealthDown(damagePercent);
+            
             //по хорошему это надо переписать
             Destroy(gameObject);
         }
