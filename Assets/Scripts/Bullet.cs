@@ -24,7 +24,7 @@ public class Bullet : MonoBehaviour
 
     public void Reverse()
     {
-        rb.velocity = -rb.velocity*10;
+        rb.velocity = -rb.velocity*5;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = reversedBullet;
     }
     /*private void OnCollisionEnter2D(Collision2D shielded)

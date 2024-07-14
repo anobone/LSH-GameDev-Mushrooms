@@ -5,10 +5,10 @@ using UnityEngine;
 public class EnemyFire : MonoBehaviour
 {
     [SerializeField] private Bullet bullet;
-    int health;
     [Header("Временной промежуток создания пулек")]
     [SerializeField] float time1; [SerializeField] float time2;
     float nextTimeSpawn;
+    Health enemyHealth;
 
     private void Start()
     {
@@ -17,6 +17,7 @@ public class EnemyFire : MonoBehaviour
             time1 = 2; time2 = 5;
         }
         nextTimeSpawn = RandomizeSpawnTime(time1, time2);
+        enemyHealth = GetComponent<Health>();
     }
     // Update is called once per frame
     void Update()
@@ -29,6 +30,10 @@ public class EnemyFire : MonoBehaviour
             //bulletClone.SetTarget();
             //bullet.getParent = transform;
             nextTimeSpawn = RandomizeSpawnTime(time1, time2);
+        }
+        if (enemyHealth.GetRemainingHealth <= 0)
+        {
+            Destroy(this.gameObject);
         }
     }
 
