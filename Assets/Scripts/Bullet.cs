@@ -8,15 +8,16 @@ public class Bullet : MonoBehaviour
     private Rigidbody2D rb;
     [SerializeField] float force;
     [SerializeField] float damagePercent;
+    string subject = "Player";
     GameObject playerHealth;
     void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = GameObject.FindGameObjectWithTag("Player");
+        player = GameObject.FindGameObjectWithTag(subject);
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
         rb.velocity = direction * force;
-        playerHealth = GameObject.FindGameObjectWithTag("Health");
+        //playerHealth = GameObject.FindGameObjectWithTag("Health");
         //print(player);
     }
 
@@ -44,9 +45,9 @@ public class Bullet : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Detected Something");
-        if (collider.gameObject.tag == "Player")
+        if (collider.gameObject.tag == subject)
         {
-            Debug.Log("Hit player");
+            Debug.Log("Hit " + subject);
             playerHealth.GetComponent<Health>().HealthDown(damagePercent);
             //по хорошему это надо переписать
             Destroy(gameObject);
@@ -54,7 +55,13 @@ public class Bullet : MonoBehaviour
         if (collider.gameObject.tag == "Shield")
         {
             Debug.Log("Reverse Bullet");
+            ChangeSubject();
             Reverse();
         }
+    }
+
+    private void ChangeSubject()
+    {
+        subject = "Enemy";
     }
 }
