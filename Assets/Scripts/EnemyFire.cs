@@ -7,6 +7,7 @@ public class EnemyFire : MonoBehaviour
     [SerializeField] private Bullet bullet;
     [Header("Временной промежуток создания пулек")]
     [SerializeField] float time1; [SerializeField] float time2;
+    [SerializeField] Conditions conditions;
     float nextTimeSpawn;
     Health enemyHealth;
 
@@ -33,7 +34,7 @@ public class EnemyFire : MonoBehaviour
         }
         if (enemyHealth.GetRemainingHealth <= 0)
         {
-            Destroy(this.gameObject);
+            Death();
         }
     }
 
@@ -41,5 +42,11 @@ public class EnemyFire : MonoBehaviour
     {
         float nextTime = Time.time + Random.Range(timestamp1, timestamp2);
         return nextTime;
+    }
+
+    void Death()
+    {
+        conditions.Check();
+        Destroy(this.gameObject);
     }
 }
