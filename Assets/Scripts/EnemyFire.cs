@@ -10,6 +10,7 @@ public class EnemyFire : MonoBehaviour
     [SerializeField] Conditions conditions;
     float nextTimeSpawn;
     Health enemyHealth;
+    Animator enemyAnimator;
 
     private void Start()
     {
@@ -19,12 +20,15 @@ public class EnemyFire : MonoBehaviour
         }
         nextTimeSpawn = RandomizeSpawnTime(time1, time2);
         enemyHealth = GetComponent<Health>();
+        enemyAnimator = GetComponent<Animator>();
     }
 
     void Update()
     {
+        //Debug.Log(Time.time +" " + nextTimeSpawn);
         if (Time.time > nextTimeSpawn)
         {
+            enemyAnimator.SetTrigger("Spit");
             Bullet bulletClone;
             bulletClone = Instantiate(bullet, transform.position, Quaternion.identity, transform);
             nextTimeSpawn = RandomizeSpawnTime(time1, time2);

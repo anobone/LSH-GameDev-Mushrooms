@@ -10,17 +10,21 @@ public class PlayerController : MonoBehaviour
     [SerializeField] SpriteRenderer sprite;
     private new Rigidbody2D rigidbody2D;
     [SerializeField] private FixedJoystick joystick;
-    //[SerializeField] private Animator animator;
+    [SerializeField] private Animator playerAnimator;
 
     private BoxCollider2D hitBox;
     [SerializeField] private GameObject shieldObject;
 
     public bool isPermitted = true;
     public bool disabledInput = false;
+    public float direction;
 
     [SerializeField] private float moveSpeed;
+    [Header("Время парирования и кулдаун")]
+    [SerializeField] float parryTime; [SerializeField] float cooldownTime;
     void Start()
     {
+        playerAnimator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         hitBox = GetComponent<BoxCollider2D>();
@@ -35,14 +39,11 @@ public class PlayerController : MonoBehaviour
 
             if (joystick.Horizontal != 0 || joystick.Vertical != 0)
             {
-                //animator.SetBool("Running", true);
                 transform.Translate(rigidbody2D.velocity * Time.deltaTime);
+                direction = GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
             }
-            else
-            {
-                //animator.SetBool("Running", false);
-            }
-            GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
+
+            ChangeAnimation(direction);
         }
     }
 
@@ -50,7 +51,6 @@ public class PlayerController : MonoBehaviour
     {
         if (isPermitted)
         {
-            Debug.Log("F{F{F{F{F");
             StartCoroutine(Parry());
         }
     }
@@ -58,12 +58,12 @@ public class PlayerController : MonoBehaviour
     {
         isPermitted = false;
         shieldObject.transform.rotation = Quaternion.Euler
-            (0, 0, GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg) * -45);
+            (0, 0, -direction);
         shieldObject.SetActive(true);
-        yield return new WaitForSeconds(2f);
+        yield return new WaitForSeconds(parryTime);
         shieldObject.SetActive(false);
         isPermitted = true;
-        yield return new WaitForSeconds(1f);
+        yield return new WaitForSeconds(cooldownTime);
     }
 
     public void DisableInput()
@@ -71,9 +71,29 @@ public class PlayerController : MonoBehaviour
         disabledInput = !disabledInput;
     }
 
-    public int GetDirection(float angle)
+    public float GetDirection(float angle)
     {
-        Debug.Log(((int)angle) / 45);
-        return ((int)angle) / 45;
+        return Mathf.Round(angle/90f) * 90;
+    }
+
+    public void ChangeAnimation(float angle)
+    {
+        switch (angle)
+        {
+            case 0f:
+                playerAnimator.Play("WalkingForward");
+                break;
+            case 90f:
+                playerAnimator.Play("WalkingRight");
+                break;
+            case -90f:
+                playerAnimator.Play("Left");
+                break;
+            case 180f: case -180f:
+                playerAnimator.Play("back");
+                break;
+            default:
+                break;
+        }
     }
 }
