@@ -10,6 +10,7 @@ public class Conditions : MonoBehaviour
     [SerializeField] Sprite youLose;
     [SerializeField] Health playerHealth;
     [SerializeField] GameObject conditions;
+    bool setOnce = true;
     public int enemiescount;
     void Start()
     {
@@ -19,18 +20,27 @@ public class Conditions : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (enemiescount == 0)
+        if (setOnce)
         {
-            conditions.SetActive(true);
-            conditions.GetComponent<Image>().sprite = youWin;
-        }
-        if (playerHealth.GetRemainingHealth <= 0)
-        {
-            conditions.SetActive(true);
-            conditions.GetComponent<Image>().sprite = youLose;
+            if (enemiescount == 0)
+            {
+                conditions.SetActive(true);
+                conditions.GetComponent<Image>().sprite = youWin;
+                SetOnce();
+            }
+            if (playerHealth.GetRemainingHealth <= 0)
+            {
+                conditions.SetActive(true);
+                conditions.GetComponent<Image>().sprite = youLose;
+                SetOnce();
+            }
         }
     }
 
+    private void SetOnce()
+    {
+        setOnce = false;
+    }
     public void Check()
     {
         enemiescount--;

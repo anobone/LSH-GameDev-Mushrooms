@@ -30,9 +30,4 @@ public class HealthBar : MonoBehaviour
             healthBar.sizeDelta = new Vector2(characterHealth.GetRemainingHealth / healthMax * healthBarSize, healthBar.sizeDelta.y);
         }
     }
-
-    public void TryAgainScreen()
-    {
-
-    }
 }

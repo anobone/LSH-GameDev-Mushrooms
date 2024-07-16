@@ -18,8 +18,6 @@ public class Bullet : MonoBehaviour
         Vector2 direction = player.transform.position - transform.position;
         direction.Normalize();
         rb.velocity = direction * force;
-        //playerHealth = GameObject.FindGameObjectWithTag("Health");
-        //print(player);
     }
 
     public void Reverse()
@@ -27,41 +25,24 @@ public class Bullet : MonoBehaviour
         rb.velocity = -rb.velocity*5;
         this.gameObject.GetComponent<SpriteRenderer>().sprite = reversedBullet;
     }
-    /*private void OnCollisionEnter2D(Collision2D shielded)
-    {
-        Debug.Log(shielded);
-        if (shielded.gameObject.tag == "Player")
-        {
-            Debug.Log("Detected Player");
-            if (shielded.collider.isTrigger == true)
-            {
-                Debug.Log("Reverse Bullet");
-                Reverse();
-            }
-            else
-            {
-                Debug.Log("Hit player");
-            }
-        }
-    }*/
+
     private void OnTriggerEnter2D(Collider2D collider)
     {
         Debug.Log("Detected " + collider.gameObject.tag);
         Health healthComponent = collider.gameObject.GetComponent<Health>();
 
+        if (healthComponent && collider.gameObject.tag == subject)
+        {
+            Debug.Log("Hit " + subject);
+            healthComponent.HealthDown(damage);
+            Destroy(gameObject);
+        }
         if (collider.gameObject.tag == "Shield")
         {
             Debug.Log("Reverse Bullet");
             ChangeSubject();
             Reverse();
             return;
-        }
-        if (healthComponent && collider.gameObject.tag == subject)
-        {
-            Debug.Log("Hit " + subject);
-            healthComponent.HealthDown(damage);
-            //по хорошему это надо переписать
-            Destroy(gameObject);
         }
     }
 

@@ -20,16 +20,13 @@ public class EnemyFire : MonoBehaviour
         nextTimeSpawn = RandomizeSpawnTime(time1, time2);
         enemyHealth = GetComponent<Health>();
     }
-    // Update is called once per frame
+
     void Update()
     {
         if (Time.time > nextTimeSpawn)
         {
             Bullet bulletClone;
-            //GameObject bulletClone = bullet;
             bulletClone = Instantiate(bullet, transform.position, Quaternion.identity, transform);
-            //bulletClone.SetTarget();
-            //bullet.getParent = transform;
             nextTimeSpawn = RandomizeSpawnTime(time1, time2);
         }
         if (enemyHealth.GetRemainingHealth <= 0)

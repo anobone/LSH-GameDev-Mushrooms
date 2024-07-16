@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.PlayerSettings;
 
 
 [RequireComponent(typeof(Rigidbody2D), typeof(BoxCollider2D))]
 public class PlayerController : MonoBehaviour
 {
+    [SerializeField] SpriteRenderer sprite;
     private new Rigidbody2D rigidbody2D;
     [SerializeField] private FixedJoystick joystick;
     //[SerializeField] private Animator animator;
@@ -39,17 +41,18 @@ public class PlayerController : MonoBehaviour
             {
                 //animator.SetBool("Running", false);
             }
+            SetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
         }
     }
 
-    public void ButtonForShield()
+    public void ButtonForParry()
     {
         if (isPermitted)
         {
-            StartCoroutine(Attack());
+            StartCoroutine(Parry());
         }
     }
-    public IEnumerator Attack()
+    public IEnumerator Parry()
     {
         isPermitted = false;
         shieldObject.SetActive(true);
@@ -62,5 +65,11 @@ public class PlayerController : MonoBehaviour
     public void DisableInput()
     {
         disabledInput = !disabledInput;
+    }
+
+    public void SetDirection(float angle)
+    {
+        if (angle < -45 && angle > -135) { sprite.flipX = true; }
+        else { sprite.flipX = false; }
     }
 }
