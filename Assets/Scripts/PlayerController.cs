@@ -58,7 +58,7 @@ public class PlayerController : MonoBehaviour
     {
         isPermitted = false;
         shieldObject.transform.rotation = Quaternion.Euler
-            (0, 0, GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg) * 45);
+            (0, 0, GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg) * -45);
         shieldObject.SetActive(true);
         yield return new WaitForSeconds(2f);
         shieldObject.SetActive(false);
