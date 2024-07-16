@@ -21,6 +21,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] private float moveSpeed;
     void Start()
     {
+        sprite = GetComponent<SpriteRenderer>();
         rigidbody2D = GetComponent<Rigidbody2D>();
         hitBox = GetComponent<BoxCollider2D>();
         shieldObject.SetActive(false);
@@ -41,7 +42,7 @@ public class PlayerController : MonoBehaviour
             {
                 //animator.SetBool("Running", false);
             }
-            SetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
+            GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
         }
     }
 
@@ -49,12 +50,15 @@ public class PlayerController : MonoBehaviour
     {
         if (isPermitted)
         {
+            Debug.Log("F{F{F{F{F");
             StartCoroutine(Parry());
         }
     }
     public IEnumerator Parry()
     {
         isPermitted = false;
+        shieldObject.transform.rotation = Quaternion.Euler
+            (0, 0, GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg) * 45);
         shieldObject.SetActive(true);
         yield return new WaitForSeconds(2f);
         shieldObject.SetActive(false);
@@ -67,9 +71,9 @@ public class PlayerController : MonoBehaviour
         disabledInput = !disabledInput;
     }
 
-    public void SetDirection(float angle)
+    public int GetDirection(float angle)
     {
-        if (angle < -45 && angle > -135) { sprite.flipX = true; }
-        else { sprite.flipX = false; }
+        Debug.Log(((int)angle) / 45);
+        return ((int)angle) / 45;
     }
 }
