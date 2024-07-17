@@ -9,7 +9,6 @@ public class HealthBar : MonoBehaviour
     [SerializeField] Health characterHealth;
     float healthMax;
     float healthLeft;
-    [SerializeField] float speed;
     float healthBarSize;
 
     void Start()

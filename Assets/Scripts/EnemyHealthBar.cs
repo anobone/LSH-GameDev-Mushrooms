@@ -5,19 +5,18 @@ using UnityEngine;
 
 public class EnemyHealthBar : MonoBehaviour
 {
-    RectTransform healthBar;
+    Transform healthBar;
     [SerializeField] Health characterHealth;
     float healthMax;
     float healthLeft;
-    [SerializeField] float speed;
     float healthBarSize;
 
     void Start()
     {
-        healthBar = gameObject.GetComponent<RectTransform>();
+        healthBar = gameObject.GetComponent<Transform>();
         healthLeft = characterHealth.GetHealthMax;
         healthMax = healthLeft;
-        healthBarSize = healthBar.sizeDelta.x;
+        healthBarSize = healthBar.localScale.x;
     }
 
     // Update is called once per frame
@@ -25,7 +24,7 @@ public class EnemyHealthBar : MonoBehaviour
     {
         if (characterHealth.GetRemainingHealth > 0)
         {
-            healthBar.sizeDelta = new Vector2(characterHealth.GetRemainingHealth / healthMax * healthBarSize, healthBar.sizeDelta.y);
+            healthBar.localScale = new Vector2(characterHealth.GetRemainingHealth / healthMax * healthBarSize, healthBar.localScale.y);
         }
     }
 }

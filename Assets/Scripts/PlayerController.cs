@@ -78,7 +78,8 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeAnimation(float angle)
     {
-        playerAnimator.SetFloat("direction", angle);
+        if (angle == -180) angle = 180;
+        playerAnimator.SetInteger("direction", (int)angle);
         /*switch (angle)
         {
             case 0f:
