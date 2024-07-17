@@ -33,7 +33,7 @@ public class Health : MonoBehaviour
         {
             healthLeft = 0;
         }
-        //Debug.Log(healthLeft);
+        /*Debug.Log(healthLeft);*/
     }
 
     public void HealthUp(float heal)
@@ -50,4 +50,18 @@ public class Health : MonoBehaviour
             healthLeft = healthMax;
         }
     }
+
+    public bool IsDead()
+    {
+        if (healthLeft > 0)
+        {
+            return false;
+        }
+        else
+        {
+            return true;
+        }
+    }
+
+    
 }

@@ -1,0 +1,1939 @@
+fileFormatVersion: 2
+guid: 4e1bcc717e0ba65438a4c25605ceab0a
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 80
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: grib_sprite_sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ed2dfbbc02079e4cacd763e6bc6716d
+      internalID: 1682447142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_1
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf5d2eabe939c34984b2402be5a1dda
+      internalID: -1290971422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_2
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72ae2d28d7468dc40b26b4ee43e34a63
+      internalID: 1940959442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_3
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b4ef96928cfa5349aaf4fcb2763e5da
+      internalID: 363156394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_4
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f85af17f35294c459757954291fbaf6
+      internalID: 593482645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_5
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfd1d0f87baa0bc46b73ff5c4388b4d1
+      internalID: 2079504114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_6
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f342ae024fa51e742b85452c4cde1365
+      internalID: -1504028975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_7
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3b85f643055c5743971ace11a9a1a7d
+      internalID: -379082644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_8
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5c132afe344bfc4e9523d4322427e58
+      internalID: -243800250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_9
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fe66c01921121f47ab3e5cd3557a519
+      internalID: -269506796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_10
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54d089d222509f646b61f46f27c54714
+      internalID: 1043753679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_11
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 3584
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98bea4c760fe3404b997a4a10f06d6dc
+      internalID: 90212268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b604414d05f14844a85d3f98e00d5cb
+      internalID: 1647971220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_13
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 774b10799327daa4bb4dc85d4b30c0ae
+      internalID: 455621577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_14
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1ecf687b59c66438490a2c865dfe53
+      internalID: -29490745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_15
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f46952413c1d5014181e816192e19595
+      internalID: 1326665316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_16
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aac42687dc1004e418d79b166f8c9098
+      internalID: 1317393100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_17
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 756945fd90722164296968a407747f0d
+      internalID: -244377160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_18
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f39263518e97d441b43e68c01c1f86b
+      internalID: 1512123124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_19
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2820bd1bdbe4797458885baa470ab40d
+      internalID: 1186337426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_20
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86b850fae1a1c37469deb38525aabfaf
+      internalID: -1044163974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_21
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 499c8ac839b78fc4d9808f8caf9e722c
+      internalID: -1859558844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_22
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bf302d65f0f784cb49e5b10a406b1c
+      internalID: 855564073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_23
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 3072
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1b23f9aa339894db1651b65d321468
+      internalID: 1648538117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 560d4fb42dc008244bbc6be6675a17ee
+      internalID: 45875313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_25
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 603f0fec361d5e141970d7e0ef081cb4
+      internalID: -1437464186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_26
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e8133d6135fcc44284b7811f081c0cd
+      internalID: -357071736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_27
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61d0a84d0d0ffa440a0efbb6322d69dc
+      internalID: -1951251459
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_28
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bcbfe5f520d3264b8cb04ef6c21f18c
+      internalID: 1183982015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_29
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef5f86fbbf35c34ba207a14a439b89e
+      internalID: 713150598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_30
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c107541e1693774fabd70389febd428
+      internalID: -2143801223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_31
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 671fbfaa97630004aa66c54627c05f0d
+      internalID: -173173297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_32
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8e0847b2ebd72947b54637e182c8c08
+      internalID: -781080804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_33
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f42c1f1beadff214caf8c5eb716ce229
+      internalID: 2093427638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_34
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f52ea7c56757247bd71e2c6187357e
+      internalID: -1631269545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_35
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 2560
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25124c0b29ae9614289d89ae9becd53c
+      internalID: -491990357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_36
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ba8624949327345b71f513938307c6
+      internalID: -331067067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_37
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee2a2ed149df14041b5c0179c0eb8770
+      internalID: 2043871907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_38
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72aff87f207f75a499ee9d31888bf518
+      internalID: -1531163772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_39
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94f500eded62be44fa2cb24c639c8da8
+      internalID: 1631335670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_40
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c2571ce889ae0c44913b5fa113d9031
+      internalID: 293473336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_41
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89c7bf5b7e5633446adffd88eaa7e8b9
+      internalID: 1545060703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_42
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8653d77201743ef46ab52ae950f8916a
+      internalID: 107920707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_43
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a69403aff908c96439ff14c20779533a
+      internalID: -786000846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_44
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62e45284ec8fa847bdb5144a9edde3f
+      internalID: -1215474983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_45
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09f78337a5f8e445ab72d21db7a4f18
+      internalID: -875056524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_46
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5befb1bcf68e4c44e97e2d34fd7a3bc3
+      internalID: -667186137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_47
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 2048
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae480d0b65de0614c9589eccfdfac1e7
+      internalID: -1933991033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85632a28c614cb24580e4f7b83a91efa
+      internalID: 2011725877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_49
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe8b93f74f04c2f4686da53cde087377
+      internalID: 154071012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_50
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c16fcbe7d8fbd43913f57f9b1647c4
+      internalID: -1511707047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_51
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 286c198f66c8af04aabdef9d3a01d42b
+      internalID: 582423693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_52
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af52c0673044ae4c9c1ea52c1310975
+      internalID: 1847924931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_53
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1f2c0cf5d9db34886d20e5510d4f79
+      internalID: -1172027364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_54
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3abe3e9e6c0eb841afcb6ebad257bef
+      internalID: 510282104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_55
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 330d96ab79d0b9e4eb9e96540b5a48a0
+      internalID: -1233649514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_56
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38c9267111bdf0b45935d4e327e24008
+      internalID: 1593639133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_57
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63ee43c2636b7d747acb2ec914d1f257
+      internalID: 1244275394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_58
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7ac18c36de8b354fa07f7a72a8868f5
+      internalID: 630314334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_59
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 1536
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f8835f7667ac5941a9521c9acbd19dd
+      internalID: 1238821576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 717e4a55c50791441a78bf2b0acf98a0
+      internalID: -1687302910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_61
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7d23345559a5bf4288f07efd3321bc1
+      internalID: -1050364122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_62
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81da1e3bb257624c902d48941035b33
+      internalID: 1656860079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_63
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5dd40b4a3f52d7b4b9d2b64450e8cd24
+      internalID: 1890161576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_64
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60649128424422d45a6f0db7caa6d383
+      internalID: 1340184375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_65
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c816f201d91cd2744ad5cc771dc35184
+      internalID: -367767356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_66
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 451e23cba0e1d834f949260381be6706
+      internalID: -1526979379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_67
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 386d4c8a63878a941af11860f54be405
+      internalID: 1034304147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_68
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 005c3229377028046a77ba8fc60ec880
+      internalID: -1097244463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_69
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c4c94797fd3b174888ba8566411401c
+      internalID: 748634348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_70
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ef251674ac0c804ca65c9dbe3bb44bb
+      internalID: -1978625978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_71
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 1024
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef6de4e3bad71e8469150077b12370d5
+      internalID: -505384600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_72
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfae68b916c25a44bb3b8357ef738aa
+      internalID: 1303686017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_73
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6eb55dc626d42cb4985153e42a896071
+      internalID: 1336335859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_74
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f70e86b7b2aa6f428f29e27bf4199a7
+      internalID: -1714558213
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_75
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921c28018e0e1784085a0266f7d3a989
+      internalID: -244154502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_76
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a79792770a6a4ed4e8594d7797bfd5f2
+      internalID: -1916292115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_77
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eba7966632e9e94eab4a49f574ec499
+      internalID: 1313144817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_78
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c44f5960dba4274a9a1d8503414089d
+      internalID: -1420980351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_79
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d788553bbf4a99f40acd385bca93975a
+      internalID: 1449594110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_80
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63bf600c97958674c87da116fc456f41
+      internalID: 1770238820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: grib_sprite_sheet_81
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 512
+        width: 312
+        height: 512
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecc1595bc65e9442bab9712b910de22
+      internalID: -579971692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      grib_sprite_sheet_13: 455621577
+      grib_sprite_sheet_27: -1951251459
+      grib_sprite_sheet_37: 2043871907
+      grib_sprite_sheet_40: 293473336
+      grib_sprite_sheet_78: -1420980351
+      grib_sprite_sheet_9: -269506796
+      grib_sprite_sheet_15: 1326665316
+      grib_sprite_sheet_39: 1631335670
+      grib_sprite_sheet_2: 1940959442
+      grib_sprite_sheet_67: 1034304147
+      grib_sprite_sheet_33: 2093427638
+      grib_sprite_sheet_14: -29490745
+      grib_sprite_sheet_62: 1656860079
+      grib_sprite_sheet_17: -244377160
+      grib_sprite_sheet_24: 45875313
+      grib_sprite_sheet_29: 713150598
+      grib_sprite_sheet_48: 2011725877
+      grib_sprite_sheet_60: -1687302910
+      grib_sprite_sheet_42: 107920707
+      grib_sprite_sheet_51: 582423693
+      grib_sprite_sheet_49: 154071012
+      grib_sprite_sheet_75: -244154502
+      grib_sprite_sheet_47: -1933991033
+      grib_sprite_sheet_38: -1531163772
+      grib_sprite_sheet_21: -1859558844
+      grib_sprite_sheet_65: -367767356
+      grib_sprite_sheet_53: -1172027364
+      grib_sprite_sheet_54: 510282104
+      grib_sprite_sheet_69: 748634348
+      grib_sprite_sheet_34: -1631269545
+      grib_sprite_sheet_26: -357071736
+      grib_sprite_sheet_59: 1238821576
+      grib_sprite_sheet_20: -1044163974
+      grib_sprite_sheet_30: -2143801223
+      grib_sprite_sheet_66: -1526979379
+      grib_sprite_sheet_58: 630314334
+      grib_sprite_sheet_11: 90212268
+      grib_sprite_sheet_12: 1647971220
+      grib_sprite_sheet_63: 1890161576
+      grib_sprite_sheet_25: -1437464186
+      grib_sprite_sheet_43: -786000846
+      grib_sprite_sheet_16: 1317393100
+      grib_sprite_sheet_19: 1186337426
+      grib_sprite_sheet_22: 855564073
+      grib_sprite_sheet_32: -781080804
+      grib_sprite_sheet_80: 1770238820
+      grib_sprite_sheet_23: 1648538117
+      grib_sprite_sheet_74: -1714558213
+      grib_sprite_sheet_52: 1847924931
+      grib_sprite_sheet_36: -331067067
+      grib_sprite_sheet_46: -667186137
+      grib_sprite_sheet_68: -1097244463
+      grib_sprite_sheet_3: 363156394
+      grib_sprite_sheet_79: 1449594110
+      grib_sprite_sheet_76: -1916292115
+      grib_sprite_sheet_70: -1978625978
+      grib_sprite_sheet_6: -1504028975
+      grib_sprite_sheet_0: 1682447142
+      grib_sprite_sheet_5: 2079504114
+      grib_sprite_sheet_41: 1545060703
+      grib_sprite_sheet_18: 1512123124
+      grib_sprite_sheet_77: 1313144817
+      grib_sprite_sheet_45: -875056524
+      grib_sprite_sheet_56: 1593639133
+      grib_sprite_sheet_1: -1290971422
+      grib_sprite_sheet_28: 1183982015
+      grib_sprite_sheet_61: -1050364122
+      grib_sprite_sheet_72: 1303686017
+      grib_sprite_sheet_8: -243800250
+      grib_sprite_sheet_73: 1336335859
+      grib_sprite_sheet_57: 1244275394
+      grib_sprite_sheet_7: -379082644
+      grib_sprite_sheet_55: -1233649514
+      grib_sprite_sheet_71: -505384600
+      grib_sprite_sheet_31: -173173297
+      grib_sprite_sheet_4: 593482645
+      grib_sprite_sheet_10: 1043753679
+      grib_sprite_sheet_64: 1340184375
+      grib_sprite_sheet_81: -579971692
+      grib_sprite_sheet_50: -1511707047
+      grib_sprite_sheet_44: -1215474983
+      grib_sprite_sheet_35: -491990357
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

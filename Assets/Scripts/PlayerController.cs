@@ -15,9 +15,12 @@ public class PlayerController : MonoBehaviour
     private BoxCollider2D hitBox;
     [SerializeField] private GameObject shieldObject;
 
-    public bool isPermitted = true;
-    public bool disabledInput = false;
-    public float direction;
+    private bool isPermitted = true;
+    private bool disabledInput = false;
+    private float direction;
+    private Vector2 animDirection;
+    private bool isWalking = false;
+    private bool isParrying = false;
 
     [SerializeField] private float moveSpeed;
     [Header("Parry time and cooldown time")]
@@ -41,9 +44,11 @@ public class PlayerController : MonoBehaviour
             {
                 transform.Translate(rigidbody2D.velocity * Time.deltaTime);
                 direction = GetDirection(Mathf.Atan2(joystick.Horizontal, joystick.Vertical) * Mathf.Rad2Deg);
+                isWalking = true;
+                HandleDirection();
             }
-
-            ChangeAnimation(direction);
+            ChangeAnimation();
+            isWalking = false;
         }
     }
 
@@ -59,9 +64,11 @@ public class PlayerController : MonoBehaviour
         isPermitted = false;
         shieldObject.transform.rotation = Quaternion.Euler
             (0, 0, -direction);
+        isParrying = true;
         shieldObject.SetActive(true);
         yield return new WaitForSeconds(parryTime);
         shieldObject.SetActive(false);
+        isParrying = false;
         isPermitted = true;
         yield return new WaitForSeconds(cooldownTime);
     }
@@ -76,27 +83,34 @@ public class PlayerController : MonoBehaviour
         return Mathf.Round(angle/90f) * 90;
     }
 
-    public void ChangeAnimation(float angle)
+    public void HandleDirection()
     {
-        if (angle == -180) angle = 180;
-        playerAnimator.SetInteger("direction", (int)angle);
-        /*switch (angle)
+        animDirection = new Vector2(joystick.Horizontal, joystick.Vertical);
+        animDirection.Normalize();
+    }
+
+    public void ChangeAnimation()
+    {
+        if (animDirection != Vector2.zero)
         {
-            case 0f:
-                playerAnimator.Play("WalkingForward");
-                
-                break;
-            case 90f:
-                playerAnimator.Play("WalkingRight");
-                break;
-            case -90f:
-                playerAnimator.Play("Left");
-                break;
-            case 180f: case -180f:
-                playerAnimator.Play("back");
-                break;
-            default:
-                break;
-        }*/
+            playerAnimator.SetFloat("Horizontal", animDirection.x);
+            playerAnimator.SetFloat("Vertical", animDirection.y);
+        }
+
+        if (isParrying)
+        {
+            playerAnimator.SetFloat("handleStats", 1f);
+        }
+        else 
+        {
+            if (isWalking)
+            {
+                playerAnimator.SetFloat("handleStats", 0.5f);
+            }
+            else
+            {
+                playerAnimator.SetFloat("handleStats", 0f);
+            }
+        }
     }
 }

@@ -36,6 +36,11 @@ public class Bullet : MonoBehaviour
         {
             Debug.Log("Hit " + subject);
             healthComponent.HealthDown(damage);
+            Debug.LogError(healthComponent.GetRemainingHealth);
+            if (healthComponent.IsDead() && subject.Equals("Player"))
+            {
+                GameManager.Instance.ShowLoseScreen();
+            }
             Destroy(gameObject);
         }
         if (collider.gameObject.tag == "Shield" && !reversed)

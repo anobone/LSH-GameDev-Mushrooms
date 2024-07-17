@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: ed96ddf4704c71245bed9b8d137de900
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - youWin: {fileID: 21300000, guid: 0d04ea1a153185947af07beb41356797, type: 3}
+  - youLose: {fileID: 21300000, guid: f5b9f929f2e58b14d811f885b599d267, type: 3}
+  - playerHealth: {instanceID: 0}
+  - conditions: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

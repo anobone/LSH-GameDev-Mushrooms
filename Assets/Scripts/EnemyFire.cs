@@ -7,7 +7,7 @@ public class EnemyFire : MonoBehaviour
     [SerializeField] private Bullet bullet;
     [Header("Time period for creating bullets")]
     [SerializeField] float time1; [SerializeField] float time2;
-    [SerializeField] Conditions conditions;
+    [SerializeField] GameManager conditions;
     float nextTimeSpawn;
     Health enemyHealth;
     Animator enemyAnimator;
@@ -47,7 +47,9 @@ public class EnemyFire : MonoBehaviour
 
     void Death()
     {
-        conditions.Check();
+        GameManager.Instance.DecrementEnemies();
         Destroy(this.gameObject);
     }
+
+    
 }
