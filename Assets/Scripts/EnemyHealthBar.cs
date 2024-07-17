@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HealthBar : MonoBehaviour
+public class EnemyHealthBar : MonoBehaviour
 {
     RectTransform healthBar;
     [SerializeField] Health characterHealth;
@@ -25,7 +25,8 @@ public class HealthBar : MonoBehaviour
     {
         if (characterHealth.GetRemainingHealth > 0)
         {
-            characterHealth.HealthDown(Time.deltaTime);
+            characterHealth.HealthDown(Time.deltaTime * speed);
+            //Debug.Log(characterHealth.GetRemainingHealth);
             healthBar.sizeDelta = new Vector2(characterHealth.GetRemainingHealth / healthMax * healthBarSize, healthBar.sizeDelta.y);
         }
     }

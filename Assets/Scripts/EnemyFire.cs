@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFire : MonoBehaviour
 {
     [SerializeField] private Bullet bullet;
-    [Header("Временной промежуток создания пулек")]
+    [Header("Time period for creating bullets")]
     [SerializeField] float time1; [SerializeField] float time2;
     [SerializeField] Conditions conditions;
     float nextTimeSpawn;

@@ -20,7 +20,7 @@ public class PlayerController : MonoBehaviour
     public float direction;
 
     [SerializeField] private float moveSpeed;
-    [Header("Время парирования и кулдаун")]
+    [Header("Parry time and cooldown time")]
     [SerializeField] float parryTime; [SerializeField] float cooldownTime;
     void Start()
     {
@@ -78,10 +78,12 @@ public class PlayerController : MonoBehaviour
 
     public void ChangeAnimation(float angle)
     {
-        switch (angle)
+        playerAnimator.SetFloat("direction", angle);
+        /*switch (angle)
         {
             case 0f:
                 playerAnimator.Play("WalkingForward");
+                
                 break;
             case 90f:
                 playerAnimator.Play("WalkingRight");
@@ -94,6 +96,6 @@ public class PlayerController : MonoBehaviour
                 break;
             default:
                 break;
-        }
+        }*/
     }
 }
