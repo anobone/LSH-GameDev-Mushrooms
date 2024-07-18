@@ -11,6 +11,7 @@ public class EnemyFire : MonoBehaviour
     float nextTimeSpawn;
     Health enemyHealth;
     Animator enemyAnimator;
+    float TreeDamage = 100f;
 
     private void Start()
     {
@@ -51,5 +52,13 @@ public class EnemyFire : MonoBehaviour
         Destroy(this.gameObject);
     }
 
-    
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.LogError(collision.name);
+        if (collision.CompareTag("Tree"))
+        {
+            enemyHealth.HealthDown(TreeDamage);
+        }
+    }
+
 }

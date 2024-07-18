@@ -7,6 +7,8 @@ TagManager:
   - Shield
   - Health
   - Enemy
+  - Blob
+  - Tree
   layers:
   - Default
   - TransparentFX

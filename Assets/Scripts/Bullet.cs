@@ -17,7 +17,8 @@ public class Bullet : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player");
-        Vector2 direction = player.transform.position - transform.position;
+        Vector2 direction = new Vector2(player.transform.position.x - transform.position.x, player.transform.position.y 
+            - transform.position.y + player.transform.GetComponent<SpriteRenderer>().bounds.size.y/2);
         direction.Normalize();
         rb.velocity = direction * force;
     }
@@ -48,7 +49,7 @@ public class Bullet : MonoBehaviour
                         break;
                     }
                 }
-                StartCoroutine(BlobDissapear(blob));
+                healthComponent.StartCoroutine(BlobDissapear(blob));
                 Debug.Log(blob.name);
                 if (healthComponent.IsDead())
                 {
@@ -73,16 +74,13 @@ public class Bullet : MonoBehaviour
 
     IEnumerator BlobDissapear(SpriteRenderer blob)
     {
-        float i = 0;
-        while (i <= 4)
+        for (int i = 0; i <= 10; i++)
         {
-            i += Time.deltaTime;
             Color blobColor = blob.color;
             blobColor.a = ((float)10 - i) * 0.1f;
             Debug.Log(blobColor.a);
             blob.color = blobColor;
-            yield return null;
+            yield return new WaitForSeconds(0.1f);
         }
-        //yield return null;
     }
 }
