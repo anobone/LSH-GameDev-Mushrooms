@@ -42,7 +42,6 @@ public class Bullet : MonoBehaviour
                 SpriteRenderer blob = null;
                 for (int i = 0; i < collider.transform.childCount; i++)
                 {
-                    //Debug.Log(collider.transform.childCount);
                     if (collider.transform.GetChild(i).CompareTag("Blob"))
                     {
                         blob = collider.transform.GetChild(i).GetComponent<SpriteRenderer>();
@@ -50,7 +49,6 @@ public class Bullet : MonoBehaviour
                     }
                 }
                 healthComponent.StartCoroutine(BlobDissapear(blob));
-                Debug.Log(blob.name);
                 if (healthComponent.IsDead())
                 {
                     GameManager.Instance.ShowLoseScreen();
@@ -78,7 +76,6 @@ public class Bullet : MonoBehaviour
         {
             Color blobColor = blob.color;
             blobColor.a = ((float)10 - i) * 0.1f;
-            Debug.Log(blobColor.a);
             blob.color = blobColor;
             yield return new WaitForSeconds(0.1f);
         }
