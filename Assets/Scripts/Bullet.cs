@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -29,24 +30,36 @@ public class Bullet : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        Debug.LogError("Detected " + collider.gameObject.tag);
         Health healthComponent = collider.gameObject.GetComponent<Health>();
 
         if (healthComponent && collider.gameObject.tag == subject)
         {
-            Debug.Log("Hit " + subject);
             healthComponent.HealthDown(damage);
-            Debug.LogError(healthComponent.GetRemainingHealth);
-            if (healthComponent.IsDead() && subject.Equals("Player"))
+
+            if (subject.Equals("Player"))
             {
-                GameManager.Instance.ShowLoseScreen();
+                SpriteRenderer blob = null;
+                for (int i = 0; i < collider.transform.childCount; i++)
+                {
+                    //Debug.Log(collider.transform.childCount);
+                    if (collider.transform.GetChild(i).CompareTag("Blob"))
+                    {
+                        blob = collider.transform.GetChild(i).GetComponent<SpriteRenderer>();
+                        break;
+                    }
+                }
+                StartCoroutine(BlobDissapear(blob));
+                Debug.Log(blob.name);
+                if (healthComponent.IsDead())
+                {
+                    GameManager.Instance.ShowLoseScreen();
+                }   
             }
             Destroy(gameObject);
         }
         if (collider.gameObject.tag == "Shield" && !reversed)
         {
             reversed = true;
-            Debug.Log("Reverse Bullet");
             ChangeSubject();
             Reverse();
             return;
@@ -56,5 +69,20 @@ public class Bullet : MonoBehaviour
     private void ChangeSubject()
     {
         subject = "Enemy";
+    }
+
+    IEnumerator BlobDissapear(SpriteRenderer blob)
+    {
+        float i = 0;
+        while (i <= 4)
+        {
+            i += Time.deltaTime;
+            Color blobColor = blob.color;
+            blobColor.a = ((float)10 - i) * 0.1f;
+            Debug.Log(blobColor.a);
+            blob.color = blobColor;
+            yield return null;
+        }
+        //yield return null;
     }
 }

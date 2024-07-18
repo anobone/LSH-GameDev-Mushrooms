@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using UnityEditor.SearchService;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
@@ -11,7 +13,9 @@ public class GameManager : MonoBehaviour
     [SerializeField] Sprite youLose;
     [SerializeField] Health playerHealth;
     [SerializeField] GameObject conditions;
-    bool setOnce = true;
+    [SerializeField] GameObject blackout;
+    [SerializeField] GameObject continueGameButton;
+    bool isPaused = false;
     public int enemiescount;
 
     public void Awake()
@@ -33,10 +37,6 @@ public class GameManager : MonoBehaviour
 
     // Update is called once per frame
 
-    private void SetOnce()
-    {
-        setOnce = false;
-    }
     public void DecrementEnemies()
     {
         enemiescount--;
@@ -44,7 +44,6 @@ public class GameManager : MonoBehaviour
         {
             conditions.SetActive(true);
             conditions.GetComponent<Image>().sprite = youWin;
-            SetOnce();
         }
     }
 
@@ -54,7 +53,28 @@ public class GameManager : MonoBehaviour
         {
             conditions.SetActive(true);
             conditions.GetComponent<Image>().sprite = youLose;
-            SetOnce();
+        }
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    public void PauseGame()
+    {
+        isPaused = !isPaused;
+        if (isPaused)
+        {
+            continueGameButton.SetActive(true);
+            blackout.SetActive(true);
+            Time.timeScale = 0.0f;
+        }
+        else
+        {
+            continueGameButton.SetActive(false);
+            blackout.SetActive(false);
+            Time.timeScale = 1.0f;
         }
     }
 }
