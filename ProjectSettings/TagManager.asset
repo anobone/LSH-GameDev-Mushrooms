@@ -9,6 +9,7 @@ TagManager:
   - Enemy
   - Blob
   - Tree
+  - Obstacle
   layers:
   - Default
   - TransparentFX

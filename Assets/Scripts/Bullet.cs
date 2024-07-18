@@ -33,6 +33,11 @@ public class Bullet : MonoBehaviour
     {
         Health healthComponent = collider.gameObject.GetComponent<Health>();
 
+        /*Debug.Log(collider.gameObject.tag);
+        if (collider.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }*/
         if (healthComponent && collider.gameObject.tag == subject)
         {
             healthComponent.HealthDown(damage);
