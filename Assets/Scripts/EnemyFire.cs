@@ -5,6 +5,7 @@ using UnityEngine;
 public class EnemyFire : MonoBehaviour
 {
     [SerializeField] private Bullet bullet;
+    [SerializeField] private GameObject pit;
     [Header("Time period for creating bullets")]
     [SerializeField] float time1; [SerializeField] float time2;
     [SerializeField] GameManager conditions;
@@ -36,6 +37,7 @@ public class EnemyFire : MonoBehaviour
         }
         if (enemyHealth.GetRemainingHealth <= 0)
         {
+            Instantiate(pit, transform.position, Quaternion.identity);
             Death();
         }
     }
