@@ -13,6 +13,8 @@ public class TutorialScreenTransition : MonoBehaviour
     [SerializeField] GameObject buttonForward;
     [SerializeField] GameObject buttonBackward;
     [SerializeField] GameObject buttonSkip;
+    [SerializeField] GameObject buttonPlay;
+    [SerializeField] GameObject joystick;
 
     private void Awake()
     {
@@ -48,11 +50,23 @@ public class TutorialScreenTransition : MonoBehaviour
         if (thisSlide == slidesImages.Count - 1)
         {
             buttonForward.SetActive(false);
+            buttonPlay.SetActive(true);
+            buttonSkip.SetActive(false);
         }
         if ((thisSlide < slidesImages.Count - 1) && (thisSlide > 0))
         {
             buttonForward.SetActive(true);
             buttonBackward.SetActive(true);
+            buttonSkip.SetActive(true);
+            buttonPlay.SetActive(false);
+        }
+        if (thisSlide == 2)
+        {
+            joystick.SetActive(true);
+        }
+        else
+        {
+            joystick.SetActive(false);
         }
     }
 

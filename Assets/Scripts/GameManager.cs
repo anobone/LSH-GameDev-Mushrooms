@@ -14,11 +14,14 @@ public class GameManager : MonoBehaviour
     [SerializeField] GameObject conditions;
     [SerializeField] GameObject blackout;
     [SerializeField] GameObject continueGameButton;
-    bool isPaused = false;
+    bool isPaused;
     public int enemiescount;
+    [SerializeField] GameObject resetLv;
+    [SerializeField] GameObject resetGame;
 
     public void Awake()
     {
+        isPaused = false;
         if (Instance == null)
         {
             Instance = this;
@@ -42,6 +45,7 @@ public class GameManager : MonoBehaviour
         if (enemiescount <= 0)
         {
             conditions.SetActive(true);
+            blackout.SetActive(true);
             conditions.GetComponent<Image>().sprite = youWin;
         }
     }
@@ -51,13 +55,9 @@ public class GameManager : MonoBehaviour
         if (playerHealth.GetRemainingHealth <= 0)
         {
             conditions.SetActive(true);
+            blackout.SetActive(true);
             conditions.GetComponent<Image>().sprite = youLose;
         }
-    }
-
-    public void RestartLevel()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 
     public void PauseGame()
@@ -65,15 +65,31 @@ public class GameManager : MonoBehaviour
         isPaused = !isPaused;
         if (isPaused)
         {
+            resetLv.SetActive(true);
+            resetGame.SetActive(true);
             continueGameButton.SetActive(true);
             blackout.SetActive(true);
             Time.timeScale = 0.0f;
         }
         else
         {
+            resetLv.SetActive(false);
+            resetGame.SetActive(false);
             continueGameButton.SetActive(false);
             blackout.SetActive(false);
             Time.timeScale = 1.0f;
         }
+    }
+
+    public void RestartGame()
+    {
+        SceneManager.LoadScene("TutorialScene");
+        Time.timeScale = 1.0f;
+    }
+
+    public void RestartLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Time.timeScale = 1.0f;
     }
 }
