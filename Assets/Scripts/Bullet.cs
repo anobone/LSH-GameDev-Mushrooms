@@ -33,11 +33,6 @@ public class Bullet : MonoBehaviour
     {
         Health healthComponent = collider.gameObject.GetComponent<Health>();
 
-        /*Debug.Log(collider.gameObject.tag);
-        if (collider.gameObject.CompareTag("Obstacle"))
-        {
-            Destroy(gameObject);
-        }*/
         if (healthComponent && collider.gameObject.tag == subject)
         {
             healthComponent.HealthDown(damage);
@@ -85,4 +80,13 @@ public class Bullet : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
         }
     }
+
+    /*private void OnCollisionEnter2D(Collision2D collision)
+    {
+        Debug.Log(collision.gameObject.tag);
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            Destroy(gameObject);
+        }
+    }*/
 }
